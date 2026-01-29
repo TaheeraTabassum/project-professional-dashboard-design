@@ -25,8 +25,10 @@ export default function CallLogs() {
                 </span>
               </div>
               <div className="flex items-center gap-4 text-xs text-gray-400 mt-3">
-                <span>🕒 {call.duration}</span>
-                <span>✅ {call.outcome}</span>
+                <span>
+                  
+                  {call.duration}</span>
+                <span> {call.outcome}</span>
                 <span className="bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded">{call.tag}</span>
               </div>
             </div>
