@@ -9,6 +9,8 @@ import CallLogs from './Layout/pages/CallLogs';
 import Appointments from './Layout/pages/Appointments';
 import Settings from './Layout/pages/Settings';
 import LogOut from './Layout/pages/LogOut';
+import Profile from './Layout/pages/SettingPages/Profile';
+import Home from './Layout/pages/SettingPages/Home';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +20,15 @@ const router = createBrowserRouter([
       {index: true, element: <Dashboard></Dashboard>},
       {path: "/CallLogs", element: <CallLogs></CallLogs>},
       {path: "/Appointments", element: <Appointments></Appointments>},
-      {path: "/Settings", element: <Settings></Settings>},
+      {path: "/Settings", element: <Settings></Settings>,
+        children: [
+           {index: true, element: <Home></Home>},
+    {
+      path: "profile", 
+      element: <Profile></Profile>
+    }
+  ]
+      },
       {path: "/LogOut", element: <LogOut></LogOut>}
     ]
   },
