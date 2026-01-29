@@ -2,9 +2,41 @@ import React from 'react'
 
 import { IoCallOutline, IoPlayCircleOutline } from "react-icons/io5";
 import { callList, transcript } from "./Components/CallComponants/CallData";
+ import { IoMdNotificationsOutline } from "react-icons/io";
 
 export default function CallLogs() {
   return (
+    <div>
+      <nav className="navbar flex flex-wrap justify-between w-full text-white bg-[#111B3C]">
+            <label
+              htmlFor="my-drawer-4"
+              aria-label="open sidebar"
+              className="btn btn-square lg:w-60 md:w-50 lg:text-lg w-40 btn-ghost"
+            >
+              {/* Sidebar toggle icon */}
+              <p>Call Logs</p>
+            </label>
+            <div className="flex items-center lg:gap-6">
+              <div className="">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost btn-circle "
+                >
+                  <div className="indicator ">
+                    <IoMdNotificationsOutline />
+                  </div>
+                </div>
+              </div>
+              <div className="lg:w-10 md:w-10 w-8 mr-8">
+                <img
+                  className="rounded-full"
+                  alt="Tailwind CSS Navbar component"
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                />
+              </div>
+            </div>
+          </nav>
     <div className="flex flex-col lg:flex-row gap-6 p-6 bg-[#0B1120] min-h-screen text-white">
       {/* Left side: Call List */}
       <div className="flex-1 bg-[#0F172B] rounded-xl border border-white/5 p-4">
@@ -63,6 +95,7 @@ export default function CallLogs() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

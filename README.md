@@ -1,3 +1,25 @@
+# Professional Dashboard UI
+
+A responsive dashboard built with React and Tailwind CSS.
+Completed within Deadline.
+
+##  Live Preview
+https://tahirasproffesionaldashboard.vercel.app/
+
+## 🛠 Tech Stack
+- React
+- Tailwind CSS
+
+##  Run Locally
+
+```bash
+npm install
+npm run dev
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
